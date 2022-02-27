@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./src/style.css">
+		<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	</head>
+	<body>
+		<nav class="sidebar close">
+			<header>
+				<div class="image-text">
+					<span class="logo_light-mode">
+					<img src="logo.svg">
+					</span>
+					<span class="logo_dark-mode">
+					<img src="./src/logo_dark-mode.svg">
+					</span>
+					<div class="text logo-text">
+						<span class="name">MiniOtter</span>
+						<span class="profession">Best mini-disc seller</span>
+					</div>
+				</div>
+				<i class='bx bx-chevron-right toggle'></i>
+			</header>
+			<div class="menu-bar">
+			<div class="menu">
+				<li class="search-box">
+					<i class='bx bx-search icon'></i>
+					<input type="text" placeholder="Search...">
+				</li>
+				<ul class="menu-links">
+					<li class="nav-link">
+						<a href="./index.html">
+						<i class='bx bx-home-alt icon' ></i>
+						<span class="text nav-text">Home</span>
+						</a>
+					</li>
+					<li class="nav-link">
+						<a href="./statistics.html">
+						<i class='bx bx-bar-chart-alt-2 icon' ></i>
+						<span class="text nav-text">Statistics</span>
+						</a>
+					</li>
+					<li class="nav-link">
+						<a href="./store.html">
+						<i class='bx bx-shopping-bag icon'></i>
+						<span class="text nav-text">Store</span>
+						</a>
+					</li>
+					<li class="nav-link">
+						<a href="./schedule.html">
+						<i class='bx bx-pie-chart-alt icon' ></i>
+						<span class="text nav-text">Schedule</span>
+						</a>
+					</li>
+					<li class="nav-link">
+						<a href="./contact.html">
+						<i class='bx bx-message-detail icon' ></i>
+						<span class="text nav-text">Contact</span>
+						</a>
+					</li>
+					<li class="nav-link">
+						<a href="./payment.html">
+						<i class='bx bx-wallet icon' ></i>
+						<span class="text nav-text">Payment</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom-content">
+				<li class="">
+					<button class="logout" onclick="alert ('Did you really think that was going to work without a server? .-.')" >
+					<i class='bx bx-log-out icon' ></i>
+					<span class="text nav-text">Logout</span>
+					</button>			   
+				</li>
+				<li class="mode">
+					<div class="sun-moon">
+						<i class='bx bx-moon icon moon'></i>
+						<i class='bx bx-sun icon sun'></i>
+					</div>
+					<span class="mode-text text">Dark mode</span>
+					<div class="theme-switch-wrapper">
+						<label class="theme-switch" for="checkbox">
+						<input type="checkbox" id="checkbox" />
+						<div class="slider">
+						</div>
+				</li>
+				</div>
+			</div>
+		</nav>
+		</section>
+		<section class="home">
+			<div class="company-name"> Statistics </div>
+			<section id="services">
+				<div class="services container">
+				  <div class="service-bottom">
+					<div class="service-item">
+					  <div class="icon"><img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-money-finance-kiranshastry-lineal-color-kiranshastry-7.png"/></div>
+					  <h2>Rising prices</h2>
+					  <p>Sorry for the inconvinience but unfortunately our prices are rising dramatically due to unknown reasons </p>
+						<img src="./src/statistics.png" class="big-center"> <img>
+						</div>
+				</div>
+			</div>
+		</section>
+			
+		</section>
+		<script>
+			const body = document.querySelector('body'),
+			sidebar = body.querySelector('nav'),
+			toggle = body.querySelector(".toggle"),
+			searchBtn = body.querySelector(".search-box");
+			
+			toggle.addEventListener("click" , () =>{
+			sidebar.classList.toggle("close");
+			})
+			
+			searchBtn.addEventListener("click" , () =>{
+			sidebar.classList.remove("close");
+			})
+		</script>
+		<script src="./src/dark-mode.js"></script>
+	</body>
+</html>
+
